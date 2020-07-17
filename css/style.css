@@ -8,7 +8,12 @@ body{
 
 
 
-/* Nav */
+/* Header */
+
+header{
+    margin-top: 55px;
+}
+
 #header-image{
     width: 100%;
     height:20vh;
@@ -27,7 +32,7 @@ body{
     -webkit-text-stroke: 1px rgb(126, 123, 123);
 }
 
-
+/* Nav */
 
 
 
@@ -38,10 +43,23 @@ body{
 
 /** Media Queries **/
 
+    /* Querie for fixed-top nav breaking header layout  on mobile*/
+@media screen and (max-width: 500px){
+    header{
+        margin-top: 110px;
+    }
+}
+
     /* Querie for #hd-txt break point*/
  @media screen and (max-width: 750px) {
      #hd-txt{
          font-size: 5em;
+     }
+ }
+
+ @media screen and (max-width: 500px) {
+     #hd-txt{
+         font-size: 3em;;
      }
  }
  
