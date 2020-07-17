@@ -1,18 +1,47 @@
 
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 body{
-    background-color: 	hsl(208, 100%, 97%)	;
+    background-color: 	hsl(208, 0%, 95%)	;
 }
 
+
+
 /* Nav */
-#nav-image{
+#header-image{
     width: 100%;
-    height:25vh;
+    height:20vh;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(https://images.unsplash.com/photo-1526401485004-46910ecc8e51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
     box-shadow:0px 1px 6px black;
 }
+#hd-txt{
+    text-align: center;
+    line-height: 20vh;
+    font-family:  Special Elite, Helvetica, sans-serif;
+    color: black;
+    font-size: 8.5em;
+    -webkit-text-stroke: 1px rgb(126, 123, 123);
+}
 
+
+
+
+
+
+
+
+
+
+/** Media Queries **/
+
+    /* Querie for #hd-txt break point*/
+ @media screen and (max-width: 750px) {
+     #hd-txt{
+         font-size: 5em;
+     }
+ }
  
