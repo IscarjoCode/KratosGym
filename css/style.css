@@ -107,6 +107,9 @@ option{
 #car-pad{
     margin: 100px 20px 20px 20px;
 }
+.feature-margin{
+    padding: 40px;
+}
 
 
 /** Media Queries **/
