@@ -91,6 +91,9 @@ option{
     background-color: white;
 }
 
+#img-align{
+    padding: 3em 1em 1em 1em;
+}
 
 
 /** Media Queries **/
