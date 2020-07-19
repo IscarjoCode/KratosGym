@@ -2,11 +2,26 @@
 /* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-body{
-    background-color: 	hsl(208, 0%, 95%);
+*{
+    font-family:  Special Elite, Helvetica, sans-serif;
+    color:white;
+
 }
+#bg-img{
 
-
+   background-image: url(https://images.unsplash.com/photo-1561140895-9d144461935e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+}
+a:hover{
+    text-decoration: none;
+}
+ a > h1:hover {
+    color: black;
+}
 
 /* Header */
 
@@ -17,49 +32,69 @@ header{
 #header-image{
     width: 100%;
     height:20vh;
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(https://images.unsplash.com/photo-1526401485004-46910ecc8e51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-    box-shadow:0px 1px 6px black;
+    background-image: url(https://images.unsplash.com/photo-1562771242-a02d9090c90c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
+    box-shadow:0px 1px 6px rgb(238, 229, 229);
 }
+
+
 #hd-txt{
     text-align: center;
     line-height: 20vh;
-    font-family:  Special Elite, Helvetica, sans-serif;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 8.5em;
-    -webkit-text-stroke: 1px rgb(126, 123, 123);
+    -webkit-text-stroke: 2px black;
+    background-color: rgba(0, 0, 0, .6);
+    height: 100%;
 }
 
-/* Nav */
+/* Main Content */
+.container{
+    background-color:rgba(0, 0, 0, .6);
+}
+.container  h1{
+    text-align: center;
+}
 
+.bn{ 
+    margin-top: 2rem;
+    background-color: darkgrey;
+}
 
+.ft{
+    padding: 0;
+    background-color: darkgrey;
+}
 
-
-
+.ft:hover{
+    background-color: white;
+}
 
 
 
 /** Media Queries **/
 
-    /* Querie for fixed-top nav breaking header layout  on mobile*/
-@media screen and (max-width: 500px){
-    header{
-        margin-top: 110px;
-    }
-}
 
     /* Querie for #hd-txt break point*/
- @media screen and (max-width: 750px) {
+ @media screen and (max-width: 800px) {
      #hd-txt{
          font-size: 5em;
      }
  }
 
- @media screen and (max-width: 500px) {
+ @media screen and (max-width: 600px) {
      #hd-txt{
-         font-size: 3em;;
+         font-size: 3.5em;
      }
+     header{
+        margin-top: 110px;
+    }
  }
  
+@media screen and  (max-width: 330px) {
+    #hd-txt{
+        font-size: 3em;
+    }
+}
