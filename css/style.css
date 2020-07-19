@@ -70,6 +70,13 @@ header{
     text-align: center;
 }
 
+.row-padding{
+    margin: 2em 1em;
+}
+
+option{
+    color: black;
+}
 .bn{ 
     margin-top: 2rem;
     background-color: darkgrey;
